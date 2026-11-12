@@ -70,11 +70,3 @@ Les numéros de couche et de tête commencent à 1. Une nouvelle exécution remp
 Chaque ligne et chaque colonne correspondent à un token de la phrase. Une ligne montre comment le modèle répartit son attention depuis le token correspondant vers les autres tokens, représentés en colonnes. Les cases claires indiquent un poids d'attention plus élevé ; les cases sombres, un poids plus faible. Les tokens spéciaux comme `[CLS]`, `[MASK]` et `[SEP]` font également partie de la représentation.
 
 Cette image montre une seule tête d'attention d'une couche du modèle. Chaque couche et chaque tête peuvent apprendre des relations différentes entre les tokens : une carte illustre donc une partie du fonctionnement de BERT, et non à elle seule une explication complète de sa prédiction.
-
-## Structure du projet
-
-- `mask.py` : chargement du modèle, complétion du texte et génération des cartes.
-- `requirements.txt` : dépendances Python.
-- `assets/fonts/` : police utilisée pour annoter les images (une police par défaut est utilisée si elle n'est pas trouvée).
-- `assets/images/carte-attention-exemple.png` : image d'exemple affichée dans ce README.
-- `attention_maps/` : cartes générées ; créé automatiquement à la première génération.
